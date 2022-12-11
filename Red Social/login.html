@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="img/favicon.png" type="image/x-icon">
+		<meta HTTP-EQUIV="Content-Type" content="text/html; charset=utf-8"/>
+		<title>Iniciar Sesión | Random</title>
+		<link rel="stylesheet" type="text/css" href="estilos/login.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link rel="icon" href="./img/favicon.png">
+	</head>
+	<body>
+        <div id="fondo">
+            <main>
+                <form action="html/menu.html">
+                    <div id="logo">
+                        <img src="./img/logorecortado.png" alt="Logo">
+                    </div>
+                    <div class="login-bloque">
+                        <input class="texto" type="text" value="" placeholder="Usuario" id="usuario" required autofocus>
+                        <input class="texto" type="password" value="" placeholder="Contraseña" id="contraseña" required>
+                        <input type="checkbox" name="recuerdame" id="recuerdame">
+                        <label for="recuerdame">Recuérdame</label>
+                        <input type="submit" id="entrar" value="Entrar">
+                        <span class="textotooltip">Pulsa para entrar a tu cuenta</span>
+                    </div>
+                </form>
+                <span>
+                    <a class="recuperar" href="#"> ¿Olvidó su contraseña o nombre de usuario?</a>
+                    <a class="registro" href="./html/alta.html">Regístrate</a>
+                </span>
+            </main>
+        </div>
+	</body>
+</html>

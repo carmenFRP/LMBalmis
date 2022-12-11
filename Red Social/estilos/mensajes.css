@@ -1,0 +1,336 @@
+ @import url('https://fonts.googleapis.com/css?family=Dosis|Montserrat|Reem+Kufi');
+
+
+
+    html, body {
+
+        width: 100%;
+
+        height: 100%;
+
+        margin: 0;
+
+        padding: 0;
+
+        font-family: "Reem Kufi";
+
+        color: #FFF;
+
+        text-align: center;
+
+      background: #4f7dff;
+
+        background: -webkit-linear-gradient(290deg, #4f7dff 0%, #4f7dff 50%, #3656af 50%, #3656af 100%);
+
+        background: -o-linear-gradient(290deg, #4f7dff 0%, #4f7dff 50%, #3656af 50%, #3656af 100%);
+
+        background: linear-gradient(20deg, #4f7dff 0%, #4f7dff 50%, #3656af 50%, #3656af 100%);
+
+    }
+
+
+
+    a {
+
+        text-decoration: none;
+
+    }
+
+
+
+
+
+    /***************MENU*****************/
+
+    .menu { 
+
+        position: absolute;
+
+        width: 50px;
+
+        height: 48px;
+
+        border-radius: 50%;
+
+        background-color: #384259;
+
+        margin-left: 1%;
+
+        margin-top: 1%;
+
+        padding-top: .3%;
+
+        cursor: pointer;
+
+        z-index: 20;
+
+    }
+
+
+
+
+
+    .icon-menu {
+
+        position: relative;
+
+        font-size: 40px;
+
+        color: #FFF;
+
+        z-index: 20;
+
+    }
+
+
+
+
+
+    /**************CONTENEDOR******************/
+
+
+
+    .contenedor {
+
+      position: relative;
+
+      width: 100%;
+
+        height: 100%;
+
+    }
+
+
+
+
+
+.usuarios{
+
+color:black;
+
+float:left;
+
+padding:4px;
+
+}
+
+
+
+
+
+.fecha{
+
+color:white;
+
+float:left;	
+
+padding:4px;
+
+}
+
+
+
+.titulo{
+
+	padding:5px;
+
+	animation-name:fadeInUp;
+
+	animation-duration:3s;
+
+}
+
+
+
+.textaco{
+
+	padding: 5px;
+
+	position: absolute; 
+
+	top: 40px; 
+
+	bottom: 0; 
+
+	left: 120px; 
+
+	right: 0;
+
+}
+
+
+
+.borde{
+
+	border:1px solid white;
+
+	animation-name:fadeInLeft;
+
+	animation-duration:2.70s;
+
+	border-radius: 50px/35px;
+
+	box-shadow: -5px 6px 11px 0px rgba(0,0,0,0.75);
+
+	padding:2%
+
+}
+
+
+
+.indice{
+
+	float:left;
+
+	animation-name:fadeInLeft;
+
+	animation-duration: 2.8s;
+
+	
+
+}
+
+
+
+a{
+
+	color:white;
+
+}
+
+
+
+#d {
+
+	opacity:0;
+
+	transition: all 1s ease-in-out;
+
+	float:right;
+
+}
+
+.borde:hover #d {
+
+	opacity:1; 
+
+	box-shadow:1px 1px 1px 1px #000;
+
+	float:right;
+
+}
+
+
+
+@-webkit-keyframes fadeInUp {
+
+  from {
+
+    opacity: 0;
+
+    -webkit-transform: translate3d(0, 100%, 0);
+
+    transform: translate3d(0, 100%, 0);
+
+  }
+
+
+
+  to {
+
+    opacity: 1;
+
+    -webkit-transform: none;
+
+    transform: none;
+
+  }
+
+}
+
+
+
+@keyframes fadeInUp {
+
+  from {
+
+    opacity: 0;
+
+    -webkit-transform: translate3d(0, 100%, 0);
+
+    transform: translate3d(0, 100%, 0);
+
+  }
+
+
+
+  to {
+
+    opacity: 1;
+
+    -webkit-transform: none;
+
+    transform: none;
+
+  }
+
+}
+
+
+
+@-webkit-keyframes fadeInLeft {
+
+  from {
+
+    opacity: 0;
+
+    -webkit-transform: translate3d(-100%, 0, 0);
+
+    transform: translate3d(-100%, 0, 0);
+
+  }
+
+
+
+  to {
+
+    opacity: 1;
+
+    -webkit-transform: none;
+
+    transform: none;
+
+  }
+
+}
+
+
+
+@keyframes fadeInLeft {
+
+  from {
+
+    opacity: 0;
+
+    -webkit-transform: translate3d(-100%, 0, 0);
+
+    transform: translate3d(-100%, 0, 0);
+
+  }
+
+
+
+  to {
+
+    opacity: 1;
+
+    -webkit-transform: none;
+
+    transform: none;
+
+  }
+
+}
+
+
+
