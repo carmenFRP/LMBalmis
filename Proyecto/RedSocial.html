@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/katex.min.css">
       
       
       
@@ -277,9 +277,9 @@ pre[data-line] .line-highlight[data-end]:after {
 <div style="font-size: 75%; border-style: solid; border-width: thin; padding: 3pt;">
 <p><strong>Condiciones de entrega</strong></p>
 <ul>
-<li>Se dispone de <span style="background: yellow">1 sesi&#xF3;n</span> para realizar las actividades. Se entregar&#xE1;n en la fecha indicada. No se admitir&#xE1;n ejercicios entregados  despu&#xE9;s de esa fecha.</li>
+<li>Se dispone de <span style="background: yellow">3 sesiones</span> para realizar las actividades. Se entregar&#xE1;n en la fecha indicada. No se admitir&#xE1;n ejercicios entregados  despu&#xE9;s de esa fecha.</li>
 <li>La entrega de todas las actividades se har&#xE1; a trav&#xE9;s de GitHub y Aules.</li>
-<li>En GitHub, al repositorio LM subir&#xE1;s un directorio que deber&#xE1; nombrarse <span style="background: yellow">con el nombre y primer apellido del alumno seguido de la frase &#x201C;-pr&#xE1;ctica3-UT5&#x201D;. El nombre y los apellidos deben ir separados por un gui&#xF3;n.</span> En aules el enlace a ese repositorio.</li>
+<li>En GitHub, tendr&#xE9;is un repositorio con el nombre de vuestra red social (uno por grupo). Entregar&#xE9;is el enlace a ese directorio.</li>
 </ul>
 <p><strong>Condiciones de correcci&#xF3;n</strong></p>
 <ul>
@@ -289,27 +289,70 @@ pre[data-line] .line-highlight[data-end]:after {
 <li>Si se detecta copia de alguna p&#xE1;gina web de internet, autom&#xE1;ticamente se suspender&#xE1; la actividad copiada.</li>
 </ul>
 <p><strong>Calificaci&#xF3;n</strong></p>
+<ul>
+<li>En esta primera entrega el proyecto tendr&#xE1; un valor m&#xED;nimo de 0 puntos y un valor m&#xE1;ximo de 10 puntos. En el apartado calificaci&#xF3;n se ponen los requisitos que debe incluir.</li>
+</ul>
 </div>
 <div style="padding: 3pt; font-weight: bold; background-color: gainsboro; margin: 5pt 0pt 5pt 0pt;">
-    Preparaci&#xF3;n
+    Requisitos funcionales
 </div>
 <div style="font-size: 75%; border-style: solid; border-width: thin; padding: 3pt;">
-El proyecto tiene como objetivo simular una parte del comportamiento de una red social como puede ser Facebook. Esta red permite entre otras cosas, entrar a un sistema, buscar amigos e intercambiar mensajes entre ellos. En esta pr&#xE1;ctica se va a crear la parte HTML y CSS del mismo.
-<p>La estructura web que tendr&#xE1; el proyecto se presenta a continuaci&#xF3;n:</p>
-<p><img src="im%C3%A1genes/esquemaWeb.png" alt="Imagen esquema red social"></p>
-<p>Para poder hacer el proyecto hay que repartir los siguientes bloques de tareas:</p>
-<ol>
-<li>Escoger una p&#xE1;gina por alumno.</li>
-<li>Subtareas:
+El proyecto tiene como objetivo simular una parte del comportamiento de una red social como puede ser Facebook. 
+<p>El cliente busca un sitio web que permita:</p>
 <ul>
-<li>Imagen o logotipo de la p&#xE1;gina web. Dise&#xF1;o del logotipo y decisi&#xF3;n de d&#xF3;nde va a ir colocado.Nombre de la red social.</li>
-<li>Paleta de colores y color de cada secci&#xF3;n.</li>
-<li>Maquetaci&#xF3;n general del sitio web y esquema de las maquetaciones (uso de WireFrames -balsamiq)</li>
-<li>Gesti&#xF3;n de las comunicaciones y documentos: github, discord, slack...</li>
-</ul>
+<li>
+<p>Entrar a una zona donde aparecer&#xE1; publicada informaci&#xF3;n personal y privada. Para entrar queremos solicitar al usuario un id y una contrase&#xF1;a.</p>
 </li>
-<li>Documentaci&#xF3;n</li>
-</ol>
+<li>
+<p>Si el usuario informa de que ha olvidado contrase&#xF1;a tiene que poder recordarla y/o cambiarla.</p>
+</li>
+<li>
+<p>La posibilidad de darse de alta como usuario de la red social. Necesitar&#xED;amos almacenar id, nombre completo del usuario, direcci&#xF3;n de correo electr&#xF3;nico y contrase&#xF1;a.</p>
+</li>
+<li>
+<p>Una p&#xE1;gina donde aparezcan publicados una serie de post con el nombre de la persona que realiza la publicaci&#xF3;n, un texto y una imagen relacionada con el mismo. As&#xED; como la posibilidad de comentar o reaccionar a dicha informaci&#xF3;n.</p>
+</li>
+<li>
+<p>Queremos tambi&#xE9;n poder acceder a la informaci&#xF3;n del perfil del usuario que ha hecho login. De &#xE9;l queremos poder ver una imagen representativa, informaci&#xF3;n personal (ciudad, instituto donde estudias o trabajas...). Tendr&#xE1; que exitir en esta p&#xE1;gina tambi&#xE9;n la posibilidad poder hacer una publicaci&#xF3;n y una visualizaci&#xF3;n de las publicaciones hechas por este usuario.</p>
+</li>
+<li>
+<p>Necesitaremos un listado con los amigos del usuario logueado, con la posibilidad de buscar amigos nuevos.</p>
+</li>
+<li>
+<p>Al igual que en otras redes sociales, queremos poder visitar peque&#xF1;as historias de nuestros contactos</p>
+</li>
+<li>
+<p>Desde esta p&#xE1;gina podremos intercambiar mensajes con los usuarios que son amigos nuestros. Se incorporar&#xE1; una especie de chat donde pondremos estos mensajes.</p>
+</li>
+<li>
+<p>Queremos incorporar una secci&#xF3;n de notificaciones tambi&#xE9;n donde se recordar&#xE1;n los cumplea&#xF1;os, los eventos pr&#xF3;ximos o se sugerir&#xE1;n publicaciones que nos resulten interesantes.</p>
+</li>
+</ul>
+</div>
+<div style="padding: 3pt; font-weight: bold; background-color: gainsboro; margin: 5pt 0pt 5pt 0pt;">
+    Reparto de tareas
+</div>
+<div style="font-size: 75%; border-style: solid; border-width: thin; padding: 3pt;">
+<p>La mayor&#xED;a de los grupos est&#xE1;n formados por 8 personas. Ten&#xE9;is que repartiros entre todos las tareas:</p>
+<pre class="language-text">Ayuda: Existen dos tipos de tareas a repartir:
+    - Tareas de desarrollo: Lo m&#xE1;s adecuado es que cada miembro del grupo escoja una o dos p&#xE1;ginas web. Hay que intentar ser equilibrados, las p&#xE1;ginas de perfil o de noticias pueden asignarse a una sola persona puesto que son m&#xE1;s laboriosas y completas. El resto de p&#xE1;ginas deber&#xE9;is agruparlas.
+    - Tareas de gesti&#xF3;n: Necesitar&#xE9;is a un encargado del repositorio, una persona que decida el logotipo, un par de personas el dise&#xF1;o de las p&#xE1;ginas (realizar wireFrames) y que hagan la parte en com&#xFA;n, otra para los colores, alguien que decida fechas de entrega entre vosotros y asuma lo no hecho de estas tareas, alguien que se encargue de gestionar y moderar el canal de comunicaci&#xF3;n entre el grupo (discord o slack), una persona que se encargue de comprobar que los datos coordinen...
+</pre>
+<p>Miembro 1:</p>
+<p>Miembro 2:</p>
+<p>Miembro 3:</p>
+<p>Miembro 4:</p>
+<p>Miembro 5:</p>
+<p>Miembro 6:</p>
+<p>Miembro 7:</p>
+<p>Miembro 8:</p>
+</div>
+<div style="padding: 3pt; font-weight: bold; background-color: gainsboro; margin: 5pt 0pt 5pt 0pt;">
+    Entrega
+</div>
+<div style="font-size: 75%; border-style: solid; border-width: thin; padding: 3pt;">
+Todos los fuentes se alojar&#xE1;n en un repositorio de GitHub y la entrega ser&#xE1; la del enlace. 
+<p>Cada miembro del grupo presentar&#xE1; una documentaci&#xF3;n opcional. Esta documentaci&#xF3;n inluir&#xE1; un &#xED;ndice, un siteMap, una explicaci&#xF3;n del desarrollo (la parte que la persona que presenta la documentaci&#xF3;n ha realizado) y de la organizaci&#xF3;n del grupo, unas capturas de pantalla con c&#xF3;mo ha quedado la interfaz y un apartado de problemas encontrados.</p>
 </div>
       </div>
       

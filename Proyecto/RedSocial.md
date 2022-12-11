@@ -53,9 +53,9 @@ toc:
 
 **Condiciones de entrega**
 
-* Se dispone de <span style="background: yellow">1 sesión</span> para realizar las actividades. Se entregarán en la fecha indicada. No se admitirán ejercicios entregados  después de esa fecha.
+* Se dispone de <span style="background: yellow">3 sesiones</span> para realizar las actividades. Se entregarán en la fecha indicada. No se admitirán ejercicios entregados  después de esa fecha.
 * La entrega de todas las actividades se hará a través de GitHub y Aules. 
-* En GitHub, al repositorio LM subirás un directorio que deberá nombrarse <span style="background: yellow">con el nombre y primer apellido del alumno seguido de la frase “-práctica3-UT5”. El nombre y los apellidos deben ir separados por un guión.</span> En aules el enlace a ese repositorio.
+* En GitHub, tendréis un repositorio con el nombre de vuestra red social (uno por grupo). Entregaréis el enlace a ese directorio.
 
 **Condiciones de corrección**
 
@@ -66,26 +66,82 @@ toc:
 
 **Calificación**
 
+* En esta primera entrega el proyecto tendrá un valor mínimo de 0 puntos y un valor máximo de 10 puntos. En el apartado calificación se ponen los requisitos que debe incluir.
+
 </div>
 
 <div style="padding: 3pt; font-weight: bold; background-color: gainsboro; margin: 5pt 0pt 5pt 0pt;">
-    Preparación
+    Requisitos funcionales
 </div>
 <div style="font-size: 75%; border-style: solid; border-width: thin; padding: 3pt;">
-El proyecto tiene como objetivo simular una parte del comportamiento de una red social como puede ser Facebook. Esta red permite entre otras cosas, entrar a un sistema, buscar amigos e intercambiar mensajes entre ellos. En esta práctica se va a crear la parte HTML y CSS del mismo.
+El proyecto tiene como objetivo simular una parte del comportamiento de una red social como puede ser Facebook. 
 
-La estructura web que tendrá el proyecto se presenta a continuación:
+El cliente busca un sitio web que permita:
 
-![Imagen esquema red social](imágenes/esquemaWeb.png)
+* Entrar a una zona donde aparecerá publicada información personal y privada. Para entrar queremos solicitar al usuario un id y una contraseña. 
 
-Para poder hacer el proyecto hay que repartir los siguientes bloques de tareas:
+* Si el usuario informa de que ha olvidado contraseña tiene que poder recordarla y/o cambiarla.
 
-1. Escoger una página por alumno.
-2. Subtareas:
-    * Imagen o logotipo de la página web. Diseño del logotipo y decisión de dónde va a ir colocado.Nombre de la red social.
-    * Paleta de colores y color de cada sección.
-    * Maquetación general del sitio web y esquema de las maquetaciones (uso de WireFrames -balsamiq)
-    * Gestión de las comunicaciones y documentos: github, discord, slack...
-3. Documentación 
+* La posibilidad de darse de alta como usuario de la red social. Necesitaríamos almacenar id, nombre completo del usuario, dirección de correo electrónico y contraseña.
+
+* Una página donde aparezcan publicados una serie de post con el nombre de la persona que realiza la publicación, un texto y una imagen relacionada con el mismo. Así como la posibilidad de comentar o reaccionar a dicha información.
+
+* Queremos también poder acceder a la información del perfil del usuario que ha hecho login. De él queremos poder ver una imagen representativa, información personal (ciudad, instituto donde estudias o trabajas...). Tendrá que exitir en esta página también la posibilidad poder hacer una publicación y una visualización de las publicaciones hechas por este usuario.
+
+* Necesitaremos un listado con los amigos del usuario logueado, con la posibilidad de buscar amigos nuevos.
+
+* Al igual que en otras redes sociales, queremos poder visitar pequeñas historias de nuestros contactos
+
+* Desde esta página podremos intercambiar mensajes con los usuarios que son amigos nuestros. Se incorporará una especie de chat donde pondremos estos mensajes.
+
+* Queremos incorporar una sección de notificaciones también donde se recordarán los cumpleaños, los eventos próximos o se sugerirán publicaciones que nos resulten interesantes.
+
+
+
+</div>
+<div style="padding: 3pt; font-weight: bold; background-color: gainsboro; margin: 5pt 0pt 5pt 0pt;">
+    Reparto de tareas
+</div>
+<div style="font-size: 75%; border-style: solid; border-width: thin; padding: 3pt;">
+
+La mayoría de los grupos están formados por 8 personas. Tenéis que repartiros entre todos las tareas:
+
+    Ayuda: Existen dos tipos de tareas a repartir:
+        - Tareas de desarrollo: Lo más adecuado es que cada miembro del grupo escoja una o dos páginas web. Hay que intentar ser equilibrados, las páginas de perfil o de noticias pueden asignarse a una sola persona puesto que son más laboriosas y completas. El resto de páginas deberéis agruparlas.
+        - Tareas de gestión: Necesitaréis a un encargado del repositorio, una persona que decida el logotipo, un par de personas el diseño de las páginas (realizar wireFrames) y que hagan la parte en común, otra para los colores, alguien que decida fechas de entrega entre vosotros y asuma lo no hecho de estas tareas, alguien que se encargue de gestionar y moderar el canal de comunicación entre el grupo (discord o slack), una persona que se encargue de comprobar que los datos coordinen...
+
+Miembro 1: 
+
+
+Miembro 2: 
+
+
+Miembro 3:
+
+
+Miembro 4:
+
+
+Miembro 5:
+
+
+Miembro 6:
+
+
+Miembro 7:
+
+
+Miembro 8:
+
+</div>
+
+<div style="padding: 3pt; font-weight: bold; background-color: gainsboro; margin: 5pt 0pt 5pt 0pt;">
+    Entrega
+</div>
+<div style="font-size: 75%; border-style: solid; border-width: thin; padding: 3pt;">
+Todos los fuentes se alojarán en un repositorio de GitHub y la entrega será la del enlace. 
+
+Cada miembro del grupo presentará una documentación opcional. Esta documentación inluirá un índice, un siteMap, una explicación del desarrollo (la parte que la persona que presenta la documentación ha realizado) y de la organización del grupo, unas capturas de pantalla con cómo ha quedado la interfaz y un apartado de problemas encontrados.
+ 
 
 
