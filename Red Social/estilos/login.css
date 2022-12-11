@@ -1,0 +1,113 @@
+html, body {
+    margin: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: url('../img/fondos/login2.jpg') no-repeat fixed center;
+    background-size: cover;
+    transition: background 2s;
+}
+
+#fondo {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    animation-name: fondo;
+    animation-duration: 4s;
+    background-color: rgba(0,0,0,0.5);
+}
+
+@keyframes fondo {
+    from {
+        background-color: rgba(0,0,0,0);
+    }
+    to {
+        background-color: rgba(0,0,0,0.5);
+    }
+}
+
+#logo {
+    margin-bottom: 10px;
+}
+
+a, span {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.registro {
+    float: right;
+}
+
+input[type="checkbox"] {
+    transform: scale(1.8);
+    margin-right: 5px;
+}
+
+main {
+    width: 480px;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+
+.login-bloque {
+    width: 400px;
+    padding: 40px;
+    background: #FFFFFF;
+    box-shadow: 5px 5px 13px 0px rgba(0,0,0,0.2);
+}
+
+.texto {
+    font-family: 'Open Sans', sans-serif;
+    height: 50px;
+    width: 100%;
+    padding: 0 4px;
+    box-sizing: border-box;
+    font-size: 20px;
+    border: 1px solid #999999;
+    margin-bottom: 10px;
+}
+
+.texto:focus {
+    background-color: #ffedd4;
+    border: 1px solid #ff9400;
+    outline: none;
+}
+
+#entrar {
+    height: 30px;
+    line-height: 30px;
+    min-width: 100px;
+    border-radius: 5px;
+    border: none;
+    background-color: #b16b07;
+    color: #ffffff;
+    float: right;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+.textotooltip {
+    float: right;
+    opacity: 0;
+    max-width: 120px;
+    background-color: #c79956;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 14px;
+    z-index: 1;
+    margin-right: 5px;
+    visibility: hidden;
+    transition: opacity 0.2s;
+}
+
+#entrar:hover + .textotooltip {
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+}
