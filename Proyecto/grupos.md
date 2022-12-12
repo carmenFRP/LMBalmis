@@ -38,19 +38,24 @@ toc:
 |Jesús Krastev | 1ºDAMA
 |Jorge | 1º DAMB|
 |Álvaro| 1º DAMA|
-
+|Javier| 1º DAW|
+|Mario E.| 1º DAW|
 
 | Nombres | Curso |
 |---------|-------|
 | Paula | 1ºDAMA
 | Antonio M.| 1ºDAMB
 | Sandra | 1º DAMA
+|Alejandro| 1º DAW|
+|Daniel| 1º DAW|
 
 | Nombres | Curso |
 |---------|-------|
 | Héctor | 1º DAMA
 | Emilio | 1º DAMB
 | Pedro | 1ºDAMA|
+|Almudena| 1º DAW|
+|Carolina| 1º DAW|
 
 
 | Nombres | Curso |
@@ -58,6 +63,8 @@ toc:
 | Mariano | 1ºDAMA |
 | Benjamín | 1º DAMB|
 | Fernando | 1ºDAMA |
+|Belén  | 1º DAW|
+|Ainhoa| 1º DAW|
 
 
 | Nombres | Curso |
@@ -65,6 +72,8 @@ toc:
 | Miguel  | 1ºDAMA|
 | Marcos  | 1ºDAMB|
 | Víctor M.  | 1ºDAMA|
+|Leticia| 1º DAW|
+|Cristina| 1º DAW|
 
 
 | Nombres | Curso |
@@ -72,6 +81,8 @@ toc:
 | Izan  | 1ºDAMA|
 | Yeray  | 1ºDAMB|
 | Samir  | 1ºDAMA|
+|Saul| 1º DAW|
+|Noel| 1º DAW|
 
 
 | Nombres | Curso |
@@ -79,6 +90,8 @@ toc:
 | Dani  | 1ºDAMA|
 | Antonio  | 1ºDAMB|
 | Cristian  | 1ºDAMA|
+|Daniel| 1º DAW|
+|Cristian| 1º DAW|
 
 
 | Nombres | Curso |
@@ -86,6 +99,8 @@ toc:
 | Víctor Z.  | 1ºDAMA|
 | Lucas  | 1ºDAMB|
 | Jose  | 1ºDAMA|
+|Rubén| 1º DAW|
+|Mario R.| 1º DAW|
 
 
 | Nombres | Curso |
@@ -93,6 +108,8 @@ toc:
 | Fran  | 1ºDAMA|
 | Pedro  | 1ºDAMB|
 | Carlos  | 1ºDAMA|
+|Michael| 1º DAW|
+|Victor| 1º DAW|
 
 
 | Nombres | Curso |
@@ -100,6 +117,8 @@ toc:
 | David  | 1ºDAMA|
 | Iker  | 1ºDAMB|
 | Jesús  | 1ºDAMA|
+|Edgar| 1º DAW|
+|Malory| 1º DAW|
 
 
 
