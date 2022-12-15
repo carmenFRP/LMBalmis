@@ -33,56 +33,56 @@ toc:
 ---
 
 ### Grupo 1
-| Nombres | Curso |
-|---------|-------|
-|Jesús Krastev | 1ºDAMA
-|Jorge | 1º DAMB|
-|Álvaro| 1º DAMA|
+| Nombres | Curso | Email |
+|---------|-------| ------ |
+|Jesús Krastev | 1ºDAMA | jeskrazot@alu.edu.gva.es |
+|Jorge | 1º DAMB| jorgomrom@alu.edu.gva.es |
+|Álvaro| 1º DAMA| alvnavcam@alu.edu.gva.es |
 |Javier| 1º DAW|
 |Mario E.| 1º DAW|
 
 ### Grupo 2
-| Nombres | Curso |
-|---------|-------|
-| Paula | 1ºDAMA
-| Antonio M.| 1ºDAMB
-| Sandra | 1º DAMA
+| Nombres | Curso | Email
+|---------|-------|-------|
+| Paula | 1ºDAMA | paupargar3@alu.edu.gva.es |
+| Antonio M.| 1ºDAMB | antmarsol@alu.edu.gva.es |
+| Sandra | 1º DAMA | sancremar@alu.edu.gva.es |
 |Alejandro| 1º DAW|
 |Daniel| 1º DAW|
 
 ### Grupo 3
-| Nombres | Curso |
-|---------|-------|
-| Héctor | 1º DAMA
-| Emilio | 1º DAMB
-| Pedro | 1ºDAMA|
+| Nombres | Curso | Email |
+|---------|-------|-------|
+| Héctor | 1º DAMA | hecrodtov@alu.edu.gva.es |
+| Emilio | 1º DAMB |  emijimnav@alu.edu.gva.es |
+| Pedro | 1ºDAMA | pedvilmar@alu.edu.gva.es |
 |Almudena| 1º DAW|
 |Carolina| 1º DAW|
 
 ### Grupo 4
-| Nombres | Curso |
-|---------|-------|
-| Mariano | 1ºDAMA |
-| Benjamín | 1º DAMB|
-| Fernando | 1ºDAMA |
+| Nombres | Curso | Email |
+|---------|-------|-------|
+| Mariano | 1ºDAMA | markot4@alu.edu.gva.es |
+| Benjamín | 1º DAMB|  benbragra@alu.edu.gva.es |
+| Fernando | 1ºDAMA | ferzarred@alu.edu.gva.es |
 |Belén  | 1º DAW|
 |Ainhoa| 1º DAW|
 
 ### Grupo 5
-| Nombres | Curso |
-|---------|-------|
-| Miguel  | 1ºDAMA|
-| Marcos  | 1ºDAMB|
-| Víctor M.  | 1ºDAMA|
+| Nombres | Curso | Email |
+|---------|-------|-------|
+| Miguel  | 1ºDAMA| mighermir@alu.edu.gva.es |
+| Marcos  | 1ºDAMB| 
+| Víctor M.  | 1ºDAMA| vicsamnav2@alu.edu.gva.es |
 |Leticia| 1º DAW|
 |Cristina| 1º DAW|
 
 ### Grupo 6
-| Nombres | Curso |
-|---------|-------|
-| Izan  | 1ºDAMA|
-| Yeray  | 1ºDAMB|
-| Samir  | 1ºDAMA|
+| Nombres | Curso | Email |
+|---------|-------|-------|
+| Izan  | 1ºDAMA| izafrical@alu.edu.gva.es |
+| Yeray  | 1ºDAMB| 
+| Samir  | 1ºDAMA| samwawasn@alu.edu.gva.es |
 |Saul| 1º DAW|
 |Noel| 1º DAW|
 
@@ -90,9 +90,9 @@ toc:
 ### Grupo 7
 | Nombres | Curso |
 |---------|-------|
-| Dani  | 1ºDAMA|
-| Antonio  | 1ºDAMB|
-| Cristian  | 1ºDAMA|
+| Dani  | 1ºDAMA| danmarmun2@alu.edu.gva.es |
+| Antonio  | 1ºDAMB| anthersar@alu.edu.gva.es |
+| Cristian  | 1ºDAMA| crigargon@alu.edu.gva.es |
 |Daniel| 1º DAW|
 |Cristian| 1º DAW|
 
@@ -100,9 +100,9 @@ toc:
 ### Grupo 8
 | Nombres | Curso |
 |---------|-------|
-| Víctor Z.  | 1ºDAMA|
-| Lucas  | 1ºDAMB|
-| Jose  | 1ºDAMA|
+| Víctor Z.  | 1ºDAMA| viczunste@alu.edu.gva.es |
+| Lucas  | 1ºDAMB| lucterlop@alu.edu.gva.es |
+| Jose  | 1ºDAMA| josgalllo@alu.edu.gva.es |
 |Rubén| 1º DAW|
 |Mario R.| 1º DAW|
 
@@ -110,18 +110,18 @@ toc:
 ### Grupo 9
 | Nombres | Curso |
 |---------|-------|
-| Fran  | 1ºDAMA|
-| Pedro  | 1ºDAMB|
-| Carlos  | 1ºDAMA|
+| Fran  | 1ºDAMA| fracarjor@alu.edu.gva.es |
+| Pedro  | 1ºDAMB| pedpersan@alu.edu.gva.es |
+| Carlos  | 1ºDAMA| carcaz2@alu.edu.gva.es |
 |Michael| 1º DAW|
 |Victor| 1º DAW|
 
 ### Grupo 10
 | Nombres | Curso |
 |---------|-------|
-| David  | 1ºDAMA|
-| Iker  | 1ºDAMB|
-| Jesús  | 1ºDAMA|
+| David  | 1ºDAMA| davesqbai@alu.edu.gva.es |
+| Iker  | 1ºDAMB| ikeparher@alu.edu.gva.es |
+| Jesús  | 1ºDAMA| jeslinalm@alu.edu.gva.es |
 |Edgar| 1º DAW|
 |Malory| 1º DAW|
 
