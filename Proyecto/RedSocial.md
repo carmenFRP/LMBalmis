@@ -53,7 +53,7 @@ toc:
 
 **Condiciones de entrega**
 
-* Se dispone de <span style="background: yellow">3 sesiones</span> para realizar las actividades. Se entregarán en la fecha indicada. No se admitirán ejercicios entregados  después de esa fecha.
+* Se dispone de 3 sesiones para realizar las actividades. El proyecto se entregará como fecha tope el 27 de enero. Se entregarán en la fecha indicada. No se admitirán ejercicios entregados  después de esa fecha.
 * La entrega de todas las actividades se hará a través de GitHub y Aules. 
 * En GitHub, tendréis un repositorio con el nombre de vuestra red social (uno por grupo). Entregaréis el enlace a ese directorio.
 
