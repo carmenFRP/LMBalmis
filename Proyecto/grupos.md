@@ -42,7 +42,7 @@ toc:
 |Mario E.| 1º DAW| marespper2@alu.edu.gva.es |
 
 ### Grupo 2
-| Nombres | Curso | Email
+| Nombres | Curso | Email |
 |---------|-------|-------|
 | Paula | 1ºDAMA | paupargar3@alu.edu.gva.es |
 | Antonio M.| 1ºDAMB | antmarsol@alu.edu.gva.es |
@@ -88,8 +88,8 @@ toc:
 
 
 ### Grupo 7
-| Nombres | Curso |
-|---------|-------|
+| Nombres | Curso | Email |
+|---------|-------|--------|
 | Dani  | 1ºDAMA| danmarmun2@alu.edu.gva.es |
 | Antonio  | 1ºDAMB| anthersar@alu.edu.gva.es |
 | Cristian  | 1ºDAMA| crigargon@alu.edu.gva.es |
@@ -97,8 +97,8 @@ toc:
 
 
 ### Grupo 8
-| Nombres | Curso |
-|---------|-------|
+| Nombres | Curso | Email |
+|---------|-------|-------|
 | Víctor Z.  | 1ºDAMA| viczunste@alu.edu.gva.es |
 | Lucas  | 1ºDAMB| lucterlop@alu.edu.gva.es |
 | Jose  | 1ºDAMA| josgalllo@alu.edu.gva.es |
@@ -107,8 +107,8 @@ toc:
 
 
 ### Grupo 9
-| Nombres | Curso |
-|---------|-------|
+| Nombres | Curso | Email |
+|---------|-------| ------|
 | Fran  | 1ºDAMA| fracarjor@alu.edu.gva.es |
 | Pedro  | 1ºDAMB| pedpersan@alu.edu.gva.es |
 | Carlos  | 1ºDAMA| carcaz2@alu.edu.gva.es |
@@ -116,8 +116,8 @@ toc:
 |Victor| 1º DAW| vicocagis@alu.edu.gva.es |
 
 ### Grupo 10
-| Nombres | Curso |
-|---------|-------|
+| Nombres | Curso |Email |
+|---------|-------| ----|
 | David  | 1ºDAMA| davesqbai@alu.edu.gva.es |
 | Iker  | 1ºDAMB| ikeparher@alu.edu.gva.es |
 | Jesús  | 1ºDAMA| jeslinalm@alu.edu.gva.es |
