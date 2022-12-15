@@ -122,7 +122,7 @@ toc:
 | Iker  | 1ºDAMB| ikeparher@alu.edu.gva.es |
 | Jesús  | 1ºDAMA| jeslinalm@alu.edu.gva.es |
 |Edgar| 1º DAW| edgacepin@alu.edu.gva.es |
-|Malory| 1º DAW| malhercai@alu.edu.gva.es |
+|Malory| 1º DAW| malhercai@alu.edu.gva.es|
 
 
 
