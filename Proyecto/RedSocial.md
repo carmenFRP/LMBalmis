@@ -106,9 +106,11 @@ El cliente busca un sitio web que permita:
 
 La mayoría de los grupos están formados por 8 personas. Tenéis que repartiros entre todos las tareas:
 
-    Ayuda: Existen dos tipos de tareas a repartir:
-        - Tareas de desarrollo: Lo más adecuado es que cada miembro del grupo escoja una o dos páginas web. Hay que intentar ser equilibrados, las páginas de perfil o de noticias pueden asignarse a una sola persona puesto que son más laboriosas y completas. El resto de páginas deberéis agruparlas.
-        - Tareas de gestión: Necesitaréis a un encargado del repositorio, una persona que decida el logotipo, un par de personas el diseño de las páginas (realizar wireFrames) y que hagan la parte en común, otra para los colores, alguien que decida fechas de entrega entre vosotros y asuma lo no hecho de estas tareas, alguien que se encargue de gestionar y moderar el canal de comunicación entre el grupo (discord o slack), una persona que se encargue de comprobar que los datos coordinen...
+:bulb: Ayuda: Existen dos tipos de tareas a repartir:
+
+- Tareas de desarrollo: Lo más adecuado es que cada miembro del grupo escoja una o dos páginas web. Hay que intentar ser equilibrados, las páginas de perfil o de noticias pueden asignarse a una sola persona puesto que son más laboriosas y completas. El resto de páginas deberéis agruparlas.
+
+- Tareas de gestión: Necesitaréis a un encargado del repositorio, una persona que decida el logotipo, un par de personas el diseño de las páginas (realizar wireFrames) y que hagan la parte en común, otra para los colores, alguien que decida fechas de entrega entre vosotros y asuma lo no hecho de estas tareas, alguien que se encargue de gestionar y moderar el canal de comunicación entre el grupo (discord o slack), una persona que se encargue de comprobar que los datos coordinen...
 
 Miembro 1: 
 
