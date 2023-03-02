@@ -58,7 +58,7 @@ toc:
 | Nombres | Curso | Email |
 |---------|-------|-------|
 | Héctor | 1º DAMA | hecrodtov@alu.edu.gva.es |
-| Emilio | 1º DAMB |  emijimnav@alu.edu.gva.es |
+| Antonio  | 1ºDAMB| anthersar@alu.edu.gva.es |
 | Pedro | 1ºDAMA | pedvilmar@alu.edu.gva.es |
 | Almudena| 1º DAW| almlopdia@alu.edu.gva.es|
 | Carolina| 1º DAW| carcuequi@alu.edu.gva.es |
@@ -95,7 +95,7 @@ toc:
 | Nombres | Curso | Email |
 |---------|-------|-------|
 | Izan  | 1ºDAMA| izafrical@alu.edu.gva.es |
-| Yeray  | 1ºDAMB| 
+| Antonio M.| 1ºDAMB | antmarsol@alu.edu.gva.es |
 | Samir  | 1ºDAMA| samwawasn@alu.edu.gva.es |
 | Saul| 1º DAW| sauvalpic@alu.edu.gva.es |
 | Noel| 1º DAW| noeleocar@alu.edu.gva.es |
@@ -107,7 +107,7 @@ toc:
 | Nombres | Curso | Email |
 |---------|-------|--------|
 | Dani  | 1ºDAMA| danmarmun2@alu.edu.gva.es |
-| Antonio  | 1ºDAMB| anthersar@alu.edu.gva.es |
+| Emilio | 1º DAMB |  emijimnav@alu.edu.gva.es |
 | Cristian  | 1ºDAMA| crigargon@alu.edu.gva.es |
 | Cristian| 1º DAW| crirodmar3@alu.edu.gva.es |
 | Nerea| 1º ASIR| nerpenbra@alu.edu.gva.es |
@@ -131,7 +131,7 @@ toc:
 | Nombres | Curso | Email |
 |---------|-------| ------|
 | Fran  | 1ºDAMA| fracarjor@alu.edu.gva.es |
-| Antonio M.| 1ºDAMB | antmarsol@alu.edu.gva.es |
+| Yeray  | 1ºDAMB| yergomzan@alu.edu.gva.es |
 | Carlos  | 1ºDAMA| carcaz2@alu.edu.gva.es |
 | Michael| 1º DAW| micpalmon@alu.edu.gva.es |
 | Victor| 1º DAW| vicocagis@alu.edu.gva.es |
