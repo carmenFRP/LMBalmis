@@ -1,0 +1,595 @@
+<!DOCTYPE html><html><head>
+      <title>LM - 1&#xBA; DAM</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <style>
+      /**
+ * prism.js Github theme based on GitHub's theme.
+ * @author Sam Clarke
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #333;
+  background: none;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.4;
+
+  -moz-tab-size: 8;
+  -o-tab-size: 8;
+  tab-size: 8;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: .8em;
+  overflow: auto;
+  /* border: 1px solid #ddd; */
+  border-radius: 3px;
+  /* background: #fff; */
+  background: #f5f5f5;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
+  background: #f5f5f5;
+}
+
+.token.comment,
+.token.blockquote {
+  color: #969896;
+}
+
+.token.cdata {
+  color: #183691;
+}
+
+.token.doctype,
+.token.punctuation,
+.token.variable,
+.token.macro.property {
+  color: #333;
+}
+
+.token.operator,
+.token.important,
+.token.keyword,
+.token.rule,
+.token.builtin {
+  color: #a71d5d;
+}
+
+.token.string,
+.token.url,
+.token.regex,
+.token.attr-value {
+  color: #183691;
+}
+
+.token.property,
+.token.number,
+.token.boolean,
+.token.entity,
+.token.atrule,
+.token.constant,
+.token.symbol,
+.token.command,
+.token.code {
+  color: #0086b3;
+}
+
+.token.tag,
+.token.selector,
+.token.prolog {
+  color: #63a35c;
+}
+
+.token.function,
+.token.namespace,
+.token.pseudo-element,
+.token.class,
+.token.class-name,
+.token.pseudo-class,
+.token.id,
+.token.url-reference .token.variable,
+.token.attr-name {
+  color: #795da3;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.token.title,
+.token.title .token.punctuation {
+  font-weight: bold;
+  color: #1d3e81;
+}
+
+.token.list {
+  color: #ed6a43;
+}
+
+.token.inserted {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.token.deleted {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+
+/* JSON */
+.language-json .token.property {
+  color: #183691;
+}
+
+.language-markup .token.tag .token.punctuation {
+  color: #333;
+}
+
+/* CSS */
+code.language-css,
+.language-css .token.function {
+  color: #0086b3;
+}
+
+/* YAML */
+.language-yaml .token.atrule {
+  color: #63a35c;
+}
+
+code.language-yaml {
+  color: #183691;
+}
+
+/* Ruby */
+.language-ruby .token.function {
+  color: #333;
+}
+
+/* Markdown */
+.language-markdown .token.url {
+  color: #795da3;
+}
+
+/* Makefile */
+.language-makefile .token.symbol {
+  color: #795da3;
+}
+
+.language-makefile .token.variable {
+  color: #183691;
+}
+
+.language-makefile .token.builtin {
+  color: #0086b3;
+}
+
+/* Bash */
+.language-bash .token.keyword {
+  color: #0086b3;
+}
+
+/* highlight */
+pre[data-line] {
+  position: relative;
+  padding: 1em 0 1em 3em;
+}
+pre[data-line] .line-highlight-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  display: block;
+  width: 100%;
+}
+
+pre[data-line] .line-highlight {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: inherit 0;
+  margin-top: 1em;
+  background: hsla(24, 20%, 50%,.08);
+  background: linear-gradient(to right, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
+  pointer-events: none;
+  line-height: inherit;
+  white-space: pre;
+}
+
+pre[data-line] .line-highlight:before, 
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-start);
+  position: absolute;
+  top: .4em;
+  left: .6em;
+  min-width: 1em;
+  padding: 0 .5em;
+  background-color: hsla(24, 20%, 50%,.4);
+  color: hsl(24, 20%, 95%);
+  font: bold 65%/1.5 sans-serif;
+  text-align: center;
+  vertical-align: .3em;
+  border-radius: 999px;
+  text-shadow: none;
+  box-shadow: 0 1px white;
+}
+
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-end);
+  top: auto;
+  bottom: .4em;
+}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p,html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div{display:inline}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  300px/2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+    </head>
+    <body for="html-export">
+      <div class="mume markdown-preview  ">
+      <h1 class="mume-header" id="%C3%ADndice">&#xCD;ndice</h1>
+
+
+<div class="md-toc">
+<div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:18px">
+          <a href="#&#xED;ndice" class="md-toc-link">
+            <p>&#xCD;ndice</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:18px">
+          <a href="#instalaciones" class="md-toc-link">
+            <p>Instalaciones</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:18px">
+          <a href="#despliegue" class="md-toc-link">
+            <p>Despliegue</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:18px">
+          <a href="#introducci&#xF3;n" class="md-toc-link">
+            <p>Introducci&#xF3;n</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:18px">
+          <a href="#comenzando-con-react" class="md-toc-link">
+            <p>Comenzando con React</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:18px">
+          <a href="#componentes" class="md-toc-link">
+            <p>Componentes</p>
+
+          </a></div><details style="padding:0;;padding-left:0px;" open>
+        <summary class="md-toc-link-wrapper">
+          <a href="#mi-primera-aplicaci&#xF3;n-con-react" class="md-toc-link"><p>Mi primera aplicaci&#xF3;n con React.</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#creaci&#xF3;n-de-un-proyecto" class="md-toc-link">
+            <p>Creaci&#xF3;n de un proyecto</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#estructura-de-directorios" class="md-toc-link">
+            <p>Estructura de directorios</p>
+
+          </a></div><details style="padding:0;;padding-left:24px;" open>
+        <summary class="md-toc-link-wrapper">
+          <a href="#creando-el-primer-componente" class="md-toc-link"><p>Creando el primer componente</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#comunicaci&#xF3;n-con-componentes" class="md-toc-link">
+            <p>Comunicaci&#xF3;n con componentes</p>
+
+          </a></div>
+        </div>
+      </details>
+    
+        </div>
+      </details>
+    
+</div>
+<div style="page-break-after:always;"></div>
+<h1 class="mume-header" id="instalaciones">Instalaciones</h1>
+
+<ul>
+<li>Navegador: <a href="https://www.google.com/chrome/">Google Chrome</a></li>
+<li>Editor : <a href="https://code.visualstudio.com/">Visual Studio Code</a></li>
+<li>Extensiones para React:
+<ul>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets">ES7 React/Redux</a></li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=burkeholland.simple-react-snippets">Simple React Snippets</a></li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag">Auto Close Tag</a></li>
+</ul>
+</li>
+<li>Entorno: <a href="https://nodejs.org/es/">Node</a></li>
+</ul>
+<blockquote>
+<p>&#x1F4CC; <strong>Nota:</strong> Una vez finalizadas las instalaciones, reiniciar terminales y editor o reiniciar PC.</p>
+</blockquote>
+<div style="page-break-after:always;"></div>
+<h1 class="mume-header" id="despliegue">Despliegue</h1>
+
+<ul>
+<li>Comprobar si Node se ha instalado correctamente</li>
+</ul>
+<pre data-role="codeBlock" data-info="bash" class="language-bash">  <span class="token operator">&gt;</span> <span class="token function">npm</span> --version
+  <span class="token number">9.5</span>.1
+</pre><ul>
+<li>Crear proyecto Next.js</li>
+</ul>
+<pre data-role="codeBlock" data-info="bash" class="language-bash">  <span class="token operator">&gt;</span> npx create-next-app
+</pre><ul>
+<li></li>
+</ul>
+<h1 class="mume-header" id="introducci%C3%B3n">Introducci&#xF3;n</h1>
+
+<p>React es una librer&#xED;a para crear interfaces de usuario en el mundo web. [EN OBRRAS: Ventajas de React ]</p>
+<pre data-role="codeBlock" data-info="javascript" class="language-javascript"><span class="token comment">/*Ejemplo de c&#xF3;digo escrito en React: insertamos un t&#xED;tulo de nivel 1 con contenido HOLA MUNDO dentro del elemento identificado como principal*/</span>
+<span class="token maybe-class-name">ReactDOM</span><span class="token punctuation">.</span><span class="token method function property-access">render</span><span class="token punctuation">(</span> <span class="token operator">&lt;</span>h1<span class="token operator">&gt;</span><span class="token constant">HOLA</span> <span class="token constant">MUNDO</span><span class="token operator">&lt;</span><span class="token operator">/</span>h1<span class="token operator">&gt;</span><span class="token punctuation">,</span> <span class="token dom variable">document</span><span class="token punctuation">.</span><span class="token method function property-access">getElementById</span><span class="token punctuation">(</span><span class="token string">&apos;principal&apos;</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</pre><h1 class="mume-header" id="comenzando-con-react">Comenzando con React</h1>
+
+<ol>
+<li>Creamos en VSCode un nuevo archivo .html</li>
+</ol>
+<blockquote>
+<p>&#x1F514; Gracias a los Emmet snippets recuerda que teniendo un archivo con extensi&#xF3;n .html s&#xF3;lo tienes que teclear ! o html5 y te generar&#xE1; la estructura b&#xE1;sica de un documento html.</p>
+</blockquote>
+<ol start="2">
+<li>A&#xF1;adimos a nuestro html la librer&#xED;a React y babel, que nos va a ayudar a hacer la traducci&#xF3;n de etiquetado html a elementos directamente. Adem&#xE1;s insertaremos tambi&#xE9;n una capa para posteriormente crear con React un elemento.</li>
+</ol>
+<pre data-role="codeBlock" data-info="html" class="language-html">    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+        <span class="token comment">&lt;!--Nuestro marcado html--&gt;</span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>principal<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+
+        <span class="token comment">&lt;!--Librer&#xED;a React--&gt;</span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>https://unpkg.com/react@17/umd/react.production.min.js<span class="token punctuation">&quot;</span></span> <span class="token attr-name">crossorigin</span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>https://unpkg.com/react-dom@17/umd/react-dom.production.min.js<span class="token punctuation">&quot;</span></span> <span class="token attr-name">crossorigin</span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+
+        <span class="token comment">&lt;!--Librer&#xED;a babel--&gt;</span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>https://unpkg.com/babel-standalone@6/babel.min.js<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+</pre><ol start="3">
+<li>Insertamos al etiqueta script donde vamos a escribir nuestras primeras instrucciones en React.</li>
+</ol>
+<pre data-role="codeBlock" data-info="html" class="language-html">    ...
+    <span class="token comment">&lt;!--Nuestro marcado html--&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>principal<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>text/babel<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+        <span class="token comment">/*Recuperamos el elemento donde quiero insertar el nuevo contenido*/</span>
+        <span class="token keyword keyword-const">const</span> principal <span class="token operator">=</span> <span class="token dom variable">document</span><span class="token punctuation">.</span><span class="token method function property-access">querySelector</span><span class="token punctuation">(</span><span class="token string">&quot;#principal&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment">/*Creamos un elemento t&#xED;tulo de nivel 1 que contenga el texto &#xA1;Hola mundo!*/</span>
+        <span class="token keyword keyword-const">const</span> saludo <span class="token operator">=</span> <span class="token operator">&lt;</span>h1<span class="token operator">&gt;</span><span class="token maybe-class-name">Hola</span> mundo<span class="token operator">&lt;</span><span class="token operator">/</span>h1<span class="token operator">&gt;</span><span class="token punctuation">;</span>
+
+        <span class="token comment">/*Le decimos a React que renderice el elemento h1 dentro del contenedor principal. Usaremos el objeto ReactDOM con su m&#xE9;todo render*/</span>
+        <span class="token maybe-class-name">ReactDOM</span><span class="token punctuation">.</span><span class="token method function property-access">render</span><span class="token punctuation">(</span>saludo<span class="token punctuation">,</span>principal<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token comment">&lt;!--Librer&#xED;a React--&gt;</span>
+    ...
+</pre><ol start="4">
+<li>Observamos el resultado en el navegador</li>
+</ol>
+<p><img src="React/01-intro-react/img/00.png" alt="Hola mundo"></p>
+<div style="page-break-after:always;"></div>
+<h1 class="mume-header" id="componentes">Componentes</h1>
+
+<p>Antes de comenzar a hacer la primera p&#xE1;gina hay que aclarar el concepto de componentes. Los componentes son uno de los conceptos principales dentro de React. Podemos verlos como bloques de c&#xF3;digo, piezas de la interfaz. Van a ser reultilizables. Juntando todas estas piezas dise&#xF1;aremos la interfaz.<br>
+Conceptualmente van a ser como las funciones JS, van a aceptar entradas y retornar elementos de React.</p>
+<p><img src="React/01-intro-react/img/01.png" alt="Componentes"></p>
+<p>Los componentes tienen un estado. El estado va a ser c&#xF3;mo se encuentra la informaci&#xF3;n en un determinado momento dentro de nuestro componente, por ejemplo, el estado nos va a ayudar a recuperar los valores de dentro de un input, que estar&#xE1;n almacenados dentro del estado del componente formulario. Adem&#xE1;s tienen otro tipo de caracter&#xED;sticas muy interesantes:</p>
+<p><img src="React/01-intro-react/img/02.png" alt="Componentes"></p>
+<div style="page-break-after:always;"></div>
+<h1 class="mume-header" id="mi-primera-aplicaci%C3%B3n-con-react">Mi primera aplicaci&#xF3;n con React.</h1>
+
+<h2 class="mume-header" id="creaci%C3%B3n-de-un-proyecto">Creaci&#xF3;n de un proyecto</h2>
+
+<ol>
+<li>Para crear una aplicaci&#xF3;n con React debemos ejecutar el siguiente comando, que nos crear&#xE1; un proyecto react de nombre ejemplo-app (si quieres puedes consultar la <a href="https://create-react-app.dev">documentaci&#xF3;n oficial</a>)</li>
+</ol>
+<pre data-role="codeBlock" data-info="bash" class="language-bash">npx create-react-app t&#xED;tulo-app
+</pre><p>El proceso puede tardar unos minutos. Una vez finalizado veremos en consola un mensaje similar al siguiente:</p>
+<p><img src="./React/01-intro-react/img/03.png" alt="Creaci&#xF3;n proyecto React"></p>
+<ol start="2">
+<li>Entramos al directorio t&#xED;tulo-app y lanzamos el servidor.</li>
+</ol>
+<pre data-role="codeBlock" data-info="bash" class="language-bash"><span class="token builtin class-name">cd</span> t&#xED;tulo-app
+<span class="token function">npm</span> start
+</pre><ol start="3">
+<li>Se abrir&#xE1; el navegador Chrome con una aplicaci&#xF3;n por defecto</li>
+</ol>
+<p><img src="./React/01-intro-react/img/04.png" alt="Proyecto por defecto React"></p>
+<h2 class="mume-header" id="estructura-de-directorios">Estructura de directorios</h2>
+
+<p>Si abrimos con VSCode el directorio ejemplo-app veremos que se han creado una serie de archivos y directorios</p>
+<p><img src="./React/01-intro-react/img/05.png" alt="Estructura de directorios"></p>
+<p>Esta estructura puede cambiar seg&#xFA;n las versiones pero los directorios y archivos fundamentales son:</p>
+<ul>
+<li>node_modules: contiene las librer&#xED;as y paquetes necesarios para poder desarrollar con React. Esas carpetas no debemos manipularlas directamente.</li>
+<li>public: aparecen los recursos de la p&#xE1;gina web que estamos visualizando. Tan solo el archivo index.html es el que nos interesa. El resto de archivos se utilizan para aplicaciones PWA (aplicaciones web progresivas)
+<ul>
+<li>index.html: En el index.html creado por defecto hay una serie de etiquetas y atributos que merecen explicaci&#xF3;n
+<ul>
+<li>El atributo lang de la etiqueta html aparece por defecto en ingl&#xE9;s, podr&#xED;amos cambiarlo a espa&#xF1;ol.</li>
+<li>En la etiqueta link que adjunta el favicon hace uso de la variable %PUBLIC_URL% que nos va a asegurar la independencia de la url.</li>
+<li>La etiqueta meta name=theme-color...No tiene mucho sentido puesto que ser&#xE1; utilizado pro aplicaciones PWA. Podr&#xED;amos eliminarla. Al igual que el link a las dos im&#xE1;genes logo y los comentarios.</li>
+<li>La etiqueta noscript... Es una etiqueta que se usa para indicar que el navegador no tiene activado JavaScript. Actualmente es raro encontrarse con esta situaci&#xF3;n pero no est&#xE1; de m&#xE1;s ponerlo.</li>
+<li>Puedes visualizar c&#xF3;mo quedar&#xED;a el fichero index.html con los cambios propuestos <a href="React/01-intro-react/docs/index.html">Aqu&#xED;</a> o dejarlo tal y como estaba.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>.gitignore y <a href="http://README.md">README.md</a>: Como ya sabes es un archivo relacionado con el control de versiones.</li>
+<li>pacakge.json: Este archivo nos servir&#xE1; para ejecutar los scripts... En principio no vamos a editarlo.</li>
+<li>src: contiene una serie de archivos relacionados con la p&#xE1;gina por defecto</li>
+</ul>
+<h2 class="mume-header" id="creando-el-primer-componente">Creando el primer componente</h2>
+
+<ol>
+<li>Abrimos nuestro proyecto y vaciamos la carpeta src</li>
+<li>Dentro de ese directorio creamos un primer archivo llamado index.js y otro PrimerComponente.js. Es importante usar nomenclatura UpperCamelCase pues es parte del est&#xE1;ndard que los componentes se nombren as&#xED;.</li>
+</ol>
+<blockquote>
+<p>&#x1F4E3; <strong>Nota:</strong> Recuerda tener lanzado el servidor (npm start) e ir observando los cambios.</p>
+</blockquote>
+<ol>
+<li>Debemos importar React, ReactDom, las posibles hojas de estilo que m&#xE1;s adelante haremos y los componentes que vamos a crear. Para eso a&#xF1;adimos estas primeras l&#xED;neas a nuestro archivo index.js</li>
+</ol>
+<pre data-role="codeBlock" data-info="javascript" class="language-javascript"><span class="token comment">/*Importaci&#xF3;n de react*/</span>
+<span class="token keyword module keyword-import">import</span> <span class="token imports"><span class="token maybe-class-name">React</span></span> <span class="token keyword module keyword-from">from</span> <span class="token string">&apos;react&apos;</span><span class="token punctuation">;</span>
+<span class="token keyword module keyword-import">import</span> <span class="token imports"><span class="token maybe-class-name">ReactDOM</span></span> <span class="token keyword module keyword-from">from</span> <span class="token string">&apos;react-dom&apos;</span><span class="token punctuation">;</span>
+
+
+<span class="token comment">/*Importaci&#xF3;n de componentes*/</span>
+<span class="token keyword module keyword-import">import</span> <span class="token imports"><span class="token maybe-class-name">Cabecera</span></span> <span class="token keyword module keyword-from">from</span> <span class="token string">&apos;./Cabecera&apos;</span><span class="token punctuation">;</span>
+
+<span class="token comment">/*Importaci&#xF3;n de ficheros css*/</span>
+<span class="token keyword module keyword-import">import</span> <span class="token string">&apos;./index.css&apos;</span><span class="token punctuation">;</span>
+</pre><ol>
+<li>Vamos a crear nuestro primer componente funcional. Escribimos una funci&#xF3;n lambda y la exportamos en Cabecera.js. En esa funci&#xF3;n retornaremos los elementos que queremos que formen parte de este componente. Hay que ponerlo entre () y crear un fragment para agrupar todos los elementos en uno, ya que React s&#xF3;lo espera procesar un elemento.</li>
+</ol>
+<pre data-role="codeBlock" data-info="javascript" class="language-javascript"><span class="token keyword module keyword-import">import</span> <span class="token imports"><span class="token punctuation">{</span> <span class="token maybe-class-name">Fragment</span> <span class="token punctuation">}</span></span> <span class="token keyword module keyword-from">from</span> <span class="token string">&quot;react&quot;</span><span class="token punctuation">;</span>
+
+
+<span class="token keyword keyword-const">const</span> <span class="token function-variable function"><span class="token maybe-class-name">Cabecera</span></span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token arrow operator">=&gt;</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword control-flow keyword-return">return</span> <span class="token punctuation">(</span> 
+         <span class="token operator">&lt;</span><span class="token maybe-class-name">Fragment</span> <span class="token operator">&gt;</span>
+            <span class="token operator">&lt;</span>h1<span class="token operator">&gt;</span><span class="token maybe-class-name">Fito</span> y <span class="token maybe-class-name">Fitipaldis</span><span class="token operator">&lt;</span><span class="token operator">/</span>h1<span class="token operator">&gt;</span>
+            <span class="token operator">&lt;</span>ul<span class="token operator">&gt;</span>
+                <span class="token operator">&lt;</span>li<span class="token operator">&gt;</span><span class="token maybe-class-name">Cada</span> vez cad&#xE1;ver<span class="token operator">&lt;</span><span class="token operator">/</span>li<span class="token operator">&gt;</span>
+                <span class="token operator">&lt;</span>li<span class="token operator">&gt;</span><span class="token maybe-class-name">Lo</span> m&#xE1;s lejos a tu lado<span class="token operator">&lt;</span><span class="token operator">/</span>li<span class="token operator">&gt;</span>
+                <span class="token operator">&lt;</span>li<span class="token operator">&gt;</span><span class="token maybe-class-name">Antes</span> de que cuente diez<span class="token operator">&lt;</span><span class="token operator">/</span>li<span class="token operator">&gt;</span>
+                <span class="token operator">&lt;</span>li<span class="token operator">&gt;</span><span class="token maybe-class-name">Por</span> la boca vive el pez<span class="token operator">&lt;</span><span class="token operator">/</span>li<span class="token operator">&gt;</span>
+                <span class="token operator">&lt;</span>li<span class="token operator">&gt;</span><span class="token maybe-class-name">Huyendo</span> conmigo de m&#xED;<span class="token operator">&lt;</span><span class="token operator">/</span>li<span class="token operator">&gt;</span>
+            <span class="token operator">&lt;</span><span class="token operator">/</span>ul<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span><span class="token operator">/</span><span class="token maybe-class-name">Fragment</span><span class="token operator">&gt;</span>
+        <span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token punctuation">}</span>
+
+<span class="token keyword module keyword-export">export</span> <span class="token keyword module keyword-default">default</span> <span class="token maybe-class-name">Cabecera</span><span class="token punctuation">;</span>
+</pre><ol start="5">
+<li>En index.js renderizamos con React el componente</li>
+</ol>
+<pre data-role="codeBlock" data-info="javascript" class="language-javascript"><span class="token comment">/*El primer par&#xE1;metro que recibe el m&#xE9;todo render en este caso es el componente. El componente se debe escribir entre los s&#xED;mbolos de &lt; y &gt;, terminar con / y es costumbre dejar un espacio en blanco final. El segundo par&#xE1;metro es d&#xF3;nde queremos insertarlo en nuestro archivo. Recordamos que estamos trabajando con el archivo index.html del directorio public*/</span>
+<span class="token maybe-class-name">ReactDOM</span><span class="token punctuation">.</span><span class="token method function property-access">render</span><span class="token punctuation">(</span><span class="token operator">&lt;</span><span class="token maybe-class-name">Cabecera</span> <span class="token operator">/</span><span class="token operator">&gt;</span><span class="token punctuation">,</span><span class="token dom variable">document</span><span class="token punctuation">.</span><span class="token method function property-access">querySelector</span><span class="token punctuation">(</span><span class="token string">&quot;header&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</pre><ol start="6">
+<li>Creamos un nuevo archivo index.css en el directorio src. A&#xF1;adimos una serie de estilos.</li>
+</ol>
+<pre data-role="codeBlock" data-info="css" class="language-css"><span class="token selector">body</span>
+<span class="token punctuation">{</span>
+    <span class="token property">min-height</span><span class="token punctuation">:</span> <span class="token number">100</span><span class="token unit">vh</span><span class="token punctuation">;</span>
+    <span class="token property">max-width</span><span class="token punctuation">:</span> <span class="token number">100</span><span class="token unit">vw</span><span class="token punctuation">;</span>
+    <span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token hexcode color">#21232a</span><span class="token punctuation">;</span>
+
+<span class="token punctuation">}</span>
+<span class="token selector">header</span>
+<span class="token punctuation">{</span>
+    <span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token color">cornflowerblue</span><span class="token punctuation">;</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> <span class="token color">white</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">ul</span>
+<span class="token punctuation">{</span>
+    <span class="token property">display</span><span class="token punctuation">:</span>flex<span class="token punctuation">;</span>
+    <span class="token property">justify-content</span><span class="token punctuation">:</span> space-around<span class="token punctuation">;</span>
+    <span class="token property">list-style</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</pre><blockquote>
+<p>&#x1F440; Puedes observar c&#xF3;mo se han quedado los ficheros dentro del directorio t&#xED;tulo-app</p>
+</blockquote>
+<p>Ahora mismo nuestra p&#xE1;gina web tendr&#xE1; un aspecto similar al siguiente:</p>
+<p><img src="./React/01-intro-react/img/06.png" alt="Imagen cabecera"></p>
+<h3 class="mume-header" id="comunicaci%C3%B3n-con-componentes">Comunicaci&#xF3;n con componentes</h3>
+
+<p>En el ejemplo anterior, mi cabecera siempre contiene la informaci&#xF3;n de Fito y Fitipaldis, pero &#xBF;Y si quiere que mi componente sea din&#xE1;mico y seg&#xFA;n la p&#xE1;gina que est&#xE9; creando me muestre una informaci&#xF3;n u otra? Vamos a ver c&#xF3;mo podemos hacer esto.</p>
+<p>Coge el ejemplo anterior y creamos un nuevo proyecto que vamos a llamar t&#xED;tulos2-app. Simplemente copia el directorio y desde consola ejecuta npm start dentro del nuevo directorio.</p>
+<ol>
+<li>Vamos a modificar el fichero index.js. Usaremos las llamadas props, que no son m&#xE1;s que las propiedades de un componente, que nos van a dar capacidad de reutilizaci&#xF3;n y poder mejorar la funcionalidad. Para a&#xF1;adir una propiedad, en el fichero index.js, en el componente cabecera pondremos un atributo grupo=&quot;Izal&quot;.</li>
+</ol>
+<pre data-role="codeBlock" data-info="javascript" class="language-javascript"><span class="token comment">/*Importaci&#xF3;n de react*/</span>
+<span class="token keyword module keyword-import">import</span> <span class="token imports"><span class="token maybe-class-name">React</span></span> <span class="token keyword module keyword-from">from</span> <span class="token string">&apos;react&apos;</span><span class="token punctuation">;</span>
+<span class="token keyword module keyword-import">import</span> <span class="token imports"><span class="token maybe-class-name">ReactDOM</span></span> <span class="token keyword module keyword-from">from</span> <span class="token string">&apos;react-dom&apos;</span><span class="token punctuation">;</span>
+
+
+<span class="token comment">/*Importaci&#xF3;n de componentes*/</span>
+<span class="token keyword module keyword-import">import</span> <span class="token imports"><span class="token maybe-class-name">Cabecera</span></span> <span class="token keyword module keyword-from">from</span> <span class="token string">&apos;./Cabecera&apos;</span><span class="token punctuation">;</span>
+
+<span class="token comment">/*Importaci&#xF3;n de ficheros css*/</span>
+<span class="token keyword module keyword-import">import</span> <span class="token string">&apos;./index.css&apos;</span><span class="token punctuation">;</span>
+
+<span class="token comment">/*El primer par&#xE1;metro que recibe el m&#xE9;todo render en este caso es el componente. El componente se debe escribir entre los s&#xED;mbolos de &lt; y &gt;, terminar con / y es costumbre dejar un espacio en blanco final. El segundo par&#xE1;metro es d&#xF3;nde queremos insertarlo en nuestro archivo. Recordamos que estamos trabajando con el archivo index.html del directorio public*/</span>
+<span class="token maybe-class-name">ReactDOM</span><span class="token punctuation">.</span><span class="token method function property-access">render</span><span class="token punctuation">(</span><span class="token operator">&lt;</span><span class="token maybe-class-name">Cabecera</span> grupo<span class="token operator">=</span><span class="token string">&quot;Izal&quot;</span> discos<span class="token operator">=</span><span class="token string">&quot;Hogar;Autoterapia;Copacabana;Agujeros de gusano;Magia y efectos especiales&quot;</span><span class="token operator">/</span><span class="token operator">&gt;</span><span class="token punctuation">,</span><span class="token dom variable">document</span><span class="token punctuation">.</span><span class="token method function property-access">querySelector</span><span class="token punctuation">(</span><span class="token string">&quot;header&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</pre><ol start="2">
+<li>Abrimos el archivo Cabecera.js y recuperamos el dato pasado usando los props, que es un objeto donde vamos a poder almacenar todas las propiedades del componente. Para acceder a una propiedad usaremos el operador . y el nombre de la propiedad.</li>
+</ol>
+<pre data-role="codeBlock" data-info="javascript" class="language-javascript"><span class="token keyword keyword-const">const</span> <span class="token function-variable function"><span class="token maybe-class-name">Cabecera</span></span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">props</span><span class="token punctuation">)</span><span class="token arrow operator">=&gt;</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword keyword-let">let</span> discos <span class="token operator">=</span> props<span class="token punctuation">.</span><span class="token property-access">discos</span><span class="token punctuation">.</span><span class="token method function property-access">split</span><span class="token punctuation">(</span><span class="token string">&quot;;&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword control-flow keyword-return">return</span> <span class="token punctuation">(</span> 
+         <span class="token operator">&lt;</span><span class="token maybe-class-name">Fragment</span> <span class="token operator">&gt;</span>
+            <span class="token operator">&lt;</span>h1<span class="token operator">&gt;</span><span class="token punctuation">{</span>props<span class="token punctuation">.</span><span class="token property-access">grupo</span><span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>h1<span class="token operator">&gt;</span>
+            <span class="token operator">&lt;</span>ul<span class="token operator">&gt;</span>
+                <span class="token operator">&lt;</span>li<span class="token operator">&gt;</span><span class="token punctuation">{</span>discos<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>li<span class="token operator">&gt;</span>
+                <span class="token operator">&lt;</span>li<span class="token operator">&gt;</span><span class="token punctuation">{</span>discos<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>li<span class="token operator">&gt;</span>
+                <span class="token operator">&lt;</span>li<span class="token operator">&gt;</span><span class="token punctuation">{</span>discos<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>li<span class="token operator">&gt;</span>
+                <span class="token operator">&lt;</span>li<span class="token operator">&gt;</span><span class="token punctuation">{</span>discos<span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>li<span class="token operator">&gt;</span>
+                <span class="token operator">&lt;</span>li<span class="token operator">&gt;</span><span class="token punctuation">{</span>discos<span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">]</span><span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>li<span class="token operator">&gt;</span>
+            <span class="token operator">&lt;</span><span class="token operator">/</span>ul<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span><span class="token operator">/</span><span class="token maybe-class-name">Fragment</span><span class="token operator">&gt;</span>
+        <span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token punctuation">}</span>
+</pre><ol start="3">
+<li>Ahora mismo podemos ver que tenemos el mismo componente, cabecera, pero que hemos cambiado el contenido simplemente con un par&#xE1;metro.</li>
+</ol>
+<p><img src="./React/01-intro-react/img/07.png" alt="Imagen cabecera"></p>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
