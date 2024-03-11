@@ -17,6 +17,7 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: 14
+          external_repository: LMBALMIS/programacioniesbalmis.github.io
 
       - name: Install dependencies
         run: npm install  # o cualquier otro comando para construir tu sitio
