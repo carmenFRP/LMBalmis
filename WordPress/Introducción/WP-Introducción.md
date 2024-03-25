@@ -121,11 +121,24 @@ En clase vamos a trabajar con WordPress.org de manera local. Para ello nos insta
 - Nombre de la web: prueba-wp
 - Características del servidor: predeterminadas.
 - Nombre de usuario: tu nombre, contraseña: 1234, email: vuestro email de gva.
+
+
+## Administración del sitio
+
 - Arrancamos. En la parte de la derecha presionar sobre start site. Siempre que queramos acceder a la página web o al panel de administrador deberemos hacer este paso, puesto que necesitamos nuestro servidor local activo.
+  
+![Arrancar sitio](../Resources/Introducción1.png)
+
 -  Con Wp-admin podemos ver el administrador del sitio y con Open Site cómo va nuestro sitio. Fíjate en las url que nos ha asignado el servidor local.
--  Al entrar al administradoción del sitio, la primera vez, nos solicitará el usuario y la contraseña que hemos creado en localwp.
 
 
+![Arrancar sitio](../Resources/Introducción2.png)
+
+
+-  Al entrar al administración del sitio, la primera vez, nos solicitará el usuario y la contraseña que hemos creado en localwp (recuerda que en principio hemos puesto nuestro nombre y 1234)
+
+![Usuario y contraseña](../Resources/Introducción3.png)
+  
 </div>
 
 
