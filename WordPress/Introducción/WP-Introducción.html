@@ -1,0 +1,155 @@
+<!DOCTYPE html><html><head>
+      <title>WP-Introducción</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:////Users/carmen/.vscode/extensions/shd101wyy.markdown-preview-enhanced-0.8.13/crossnote/dependencies/katex/katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<h1 id="índice">Índice </h1>
+
+<div class="md-toc">
+<div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:18px">
+          <a href="#índice" class="md-toc-link">
+            <p>Índice</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:18px">
+          <a href="#qué-es-wordpress" class="md-toc-link">
+            <p>¿Qué es WordPress?</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:18px">
+          <a href="#wordpresscom-y-wordpressorg" class="md-toc-link">
+            </a><p><a href="#wordpresscom-y-wordpressorg" class="md-toc-link"></a><a href="http://Wordpress.com">Wordpress.com</a> y <a href="http://WordPress.org">WordPress.org</a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:18px">
+          <a href="#conceptos-básicos" class="md-toc-link">
+            <p>Conceptos básicos</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:18px">
+          <a href="#primeros-pasos-en-wordpress" class="md-toc-link">
+            <p>Primeros pasos en Wordpress</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:18px">
+          <a href="#biografía" class="md-toc-link">
+            <p>Biografía</p>
+
+          </a></div>
+</div>
+<div style="page-break-after:always;">
+<h1 id="qué-es-wordpress">¿Qué es WordPress? </h1>
+<p>El término CMS proviene del inglés Content Management System, que significa Sistema de Gestión de Contenidos, un sistema online que nos permite poner en marcha un sitio web de forma práctica y rápida. Su gran ventaja es la posibilidad de administrar contenidos dinámicos de forma sencilla, es decir, mantener un blog, un ecommerce o cualquier otro tipo de página web que demande una actualización constante.</p>
+<p>Imagínate por ejemplo que trabajas en un periódico o una revista. Tu audiencia siempre está buscando noticias de último momento y temas de actualidad, por lo que tú y tu equipo tenéis que producir contenidos nuevos constantemente. Este proceso de creación puede ser complejo: para cada nuevo contenido, es necesario crear la estructura técnica completa de la página y cada actualización manual lleva su tiempo.</p>
+<p>En tal escenario, ¿te imaginas lo caro y el coste temporal de este trabajo? Sería insostenible como negocio, en términos de tiempo y dinero.<br>
+Además, suponiendo que pudieras mantener el proyecto en marcha, la necesidad de contar con profesionales altamente capacitados y con los conocimientos técnicos necesarios también podría limitar en gran medida la aparición de nuevos negocios.<br>
+Para solucionar este tipo de problema estructural y operativo, se creó el CMS.</p>
+<p>El CMS pues tiene tres funciones principales: Crear sitios web, gestionarlos y mantenerlos y darnos herramientas para poder administrarlos. Hoy en día existen muchos tipos diferentes de CMS en el mercado pero los más conocidos son:</p>
+<ul>
+<li><em>WordPress</em></li>
+<li>Drupal</li>
+<li>Joomla</li>
+<li>Wix</li>
+<li>Magento</li>
+</ul>
+<p>Y entre tantas opciones, ¿Por qué WordPress? Principalmente por sus características:</p>
+<ul>
+<li>Facilidad de uso: presenta una interfaz amigable que no exige tener conocimientos técnicos elevados de la web.</li>
+<li>Personalización: existen numerosos diseños (más de 10.000 plantillas) y plugings que nos permiten configurar el sitio web tanto a nivel estético como de funcionalidad.</li>
+<li>Amplia comunidad que da soporte a nivel de recursos (información, soporte, dudas...). Además es código abierto.</li>
+<li>SEO: está diseñado teniendo en cuenta las recomendaciones para mejorar el posicionamiento de la web</li>
+<li>Actualizaciones y seguridad: el equipo técnico está en constante mejora de su seguridad.</li>
+</ul>
+<blockquote>
+<p>✋ CONOCE un poco de la historia de Wordpress ==&gt; <a href="https://youtu.be/Zbor4XFOdKA">Vídeo</a></p>
+</blockquote>
+</div>
+<div style="page-break-after:always;">
+<h1 id="wordpresscom-y-wordpressorg"><a href="http://Wordpress.com">Wordpress.com</a> y <a href="http://WordPress.org">WordPress.org</a> </h1>
+<p>Cuando se habla de WordPress tenemos que tener en cuenta que existen dos servicios diferentes. Vamos a ver la diferencia entre ambos:</p>
+<ul>
+<li>
+<p><a href="http://Wordpress.org">Wordpress.org</a></p>
+<ul>
+<li>Código abierto, personalizable e ilimitado</li>
+<li>Necesitamos un servidor para alojar nuestro sitio web</li>
+</ul>
+</li>
+<li>
+<p><a href="http://Wordpress.com">Wordpress.com</a></p>
+<ul>
+<li>Empresa privada que ofrece el servicio permitiendo al usuario despreocuparse de cuestiones técnicas.</li>
+<li>Poco personalizable y limitado</li>
+<li>Ofrece hosting y dominio.</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>✋ NAVEGA por <a href="http://WordPress.com">WordPress.com</a> y por <a href="http://Wordpress.org">Wordpress.org</a> para ver las diferencias ==&gt; <a href="https://youtu.be/Zbor4XFOdKA">Vídeo</a></p>
+</blockquote>
+</div>
+<div style="page-break-after:always;">
+<h1 id="conceptos-básicos">Conceptos básicos </h1>
+<p>Algunos conceptos básicos que tenemos que tener en cuenta antes de utilizar WordPress:</p>
+<ul>
+<li>
+<p><strong>Dominio</strong>: Un nombre de dominio es una dirección web. Aunque un nombre de dominio y una URL (Localizador Universal de Recursos) comparten algunas similitudes, se refieren a cosas diferentes. Una URL es una dirección completa del sitio web que puede dirigir a los usuarios a una página específica de un sitio. Un nombre de dominio es sólo una parte. Una URL se compone de un protocolo, un dominio y una ruta.</p>
+</li>
+<li>
+<p><strong>Servidor DNS</strong>: cada dominio está vinculado a una dirección IP. Cuando un usuario introduce un nombre de dominio en un navegador, el servidor buscará a través de una red global de servidores que conforman el Sistema de Nombres de Dominio (DNS). Los servidores DNS buscarán la dirección IP asociada al nombre de dominio. El servidor que tenga información sobre la dirección IP la devolverá al navegador web. Luego, solicitará datos sobre el sitio al servidor de hosting del dominio.<br>
+El servidor web almacena todos los datos de la web, incluidos sus archivos, la base de datos y el código HTML. Una vez que el servidor de alojamiento devuelve los datos, el navegador web los convierte en una página web que los usuarios pueden visitar.<br>
+<img src="../Resources/dns.webp" alt="Imagen esquema DNS"></p>
+</li>
+<li>
+<p><strong>Hosting</strong>: Un hosting es un servicio online que hace que se pueda acceder a tu sitio web en Internet. Al contratar un hosting web, estás alquilando un espacio en un servidor que almacena todos los archivos y datos de tu sitio web para que funcione correctamente.<br>
+Los proveedores de hosting web proporcionan la tecnología y los recursos necesarios para que tu sitio web funcione de forma eficaz y segura. Éstos se encargan de mantener el servidor en funcionamiento, aplicar medidas de seguridad y garantizar que datos como textos, fotos y otros archivos se transfieran correctamente a los navegadores de los visitantes. Existen diferentes tipos de hosting:</p>
+<ul>
+<li>Hosting compartido: varios usuarios comparten los mismos recursos del servidor.</li>
+<li>Hosting VPS: compartes recursos pero el proveedor crea una partición virtual para cada usuario.</li>
+<li>Cloud hosting: utiliza servidores virtuales para para alojar sitios.</li>
+<li>Hosting Dedicado: Por ejemplo, hosting wordpress con un entorno optimizado para páginas que usan esta CMS.</li>
+</ul>
+</li>
+</ul>
+</div>
+<div style="page-break-after:always;">
+<h1 id="primeros-pasos-en-wordpress">Primeros pasos en Wordpress </h1>
+<ul>
+<li>Descargar <a href="http://www.localwp.com">Localwp</a></li>
+<li>Click sobre "Create a new site"</li>
+<li>Nombre de la web: prueba-wp</li>
+<li>Características del servidor: predeterminadas.</li>
+<li>Nombre de usuario: tu nombre, contraseña: 1234, email: vuestro email de gva.</li>
+<li>Arrancamos. En la parte de la derecha presionar sobre start site. Con Wp-admin podemos ver el administrador del sitio y con OpenSite cómo va nuestro sitio.</li>
+</ul>
+</div>
+<h1 id="biografía">Biografía </h1>
+<p><a href="https://www.youtube.com/watch?v=lwNEskjrGD8">https://www.youtube.com/watch?v=lwNEskjrGD8</a></p>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
