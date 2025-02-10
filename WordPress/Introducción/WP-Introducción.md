@@ -114,30 +114,12 @@ Los proveedores de hosting web proporcionan la tecnología y los recursos necesa
 
 # Primeros pasos en Wordpress
 
-En clase vamos a trabajar con WordPress.org de manera local. Para ello nos instalaremos un servidor local (localwp) y dentro crearemos nuestro sitio web con WP. Para ello debes seguir los siguientes pasos:
+En clase vamos a trabajar con WordPress.org de manera local. Para ello nos instalaremos un servidor local (XAMPP) y dentro crearemos nuestro sitio web con WP. La instalación de XAMPP está explicada en el archivo WP-XAMPP.pdf
 
-- Descargar [Localwp](http://www.localwp.com)
-- Click sobre "Create a new site"
-- Nombre de la web: prueba-wp
-- Características del servidor: predeterminadas.
-- Nombre de usuario: tu nombre, contraseña: 1234, email: vuestro email de gva.
-
+Descargaremos WordPress de la página oficial https://es.wordpress.org/. Una vez descargado crearemos una carpeta en htdocs y copiaremos el contenido descomprimido en esa carpeta.
 
 ## Administración del sitio
 
-- Arrancamos. En la parte de la derecha presionar sobre start site. Siempre que queramos acceder a la página web o al panel de administrador deberemos hacer este paso, puesto que necesitamos nuestro servidor local activo.
-  
-![Arrancar sitio](../Resources/Introducción1.png)
-
--  Con Wp-admin podemos ver el administrador del sitio y con Open Site cómo va nuestro sitio. Fíjate en las url que nos ha asignado el servidor local.
-
-
-![Arrancar sitio](../Resources/Introducción2.png)
-
-
--  Al entrar al administración del sitio, la primera vez, nos solicitará el usuario y la contraseña que hemos creado en localwp (recuerda que en principio hemos puesto nuestro nombre y 1234)
-
-![Usuario y contraseña](../Resources/Introducción3.png)
   
 </div>
 
