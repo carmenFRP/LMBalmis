@@ -1,3 +1,5 @@
 Ignorar
 
 .DS_Store
+
+*.yml
