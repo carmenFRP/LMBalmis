@@ -117,7 +117,7 @@ Los proveedores de hosting web proporcionan la tecnología y los recursos necesa
 En clase vamos a trabajar con WordPress.org de manera local. Para ello nos instalaremos un servidor local (XAMPP -- PDF Wp-XAMPP para más info) y dentro crearemos nuestro sitio web con WP. 
 
 1. Descargaremos WordPress de la página oficial https://es.wordpress.org/. Cogeremos la última versión LTS. 
-2. Descomprimer el fichero bajado en la carpeta htdocs que se encuentra dentro de tu XAMPP.
+2. Descomprimir el fichero bajado en la carpeta htdocs que se encuentra dentro de tu XAMPP.
 3. Renombramos la carpeta a PruebaWP.
 4. Arrancamos el servidor XAMPP.
 5. Para usar WP, cada vez que creemos un sitio nuevo, tenemos que crear la BBDD. Nos vamos al administrador de MYSQL y creamos una nueva BBDD de nombre PruebaWP y codificación UTF8mb4_general_ci.
