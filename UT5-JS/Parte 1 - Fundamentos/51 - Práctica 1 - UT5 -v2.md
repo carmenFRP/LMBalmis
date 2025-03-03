@@ -79,7 +79,7 @@ Ejercicio 1. Funciones y parámetros
 ```js
 
 Ejercicio1()
-
+----------------------------------
 
 let fechas = [
     "2023-06-15",
@@ -88,8 +88,7 @@ let fechas = [
     "2023-01-01"
 ];
 Ejercicio1(fechas,OrdenaFechas)
-
-
+----------------------------------
 let numeros = [89, 23, 444, 150, 11];
 Ejercicio1(numeros,OrdenaNumeros)
 
@@ -102,10 +101,10 @@ El primer parámetro no es un array.
 El segundo parámetro no es una función
 
 Array original: [ '2023-06-15', '2021-12-10', '2022-03-25', '2023-01-01' ]
-Array ordenado: [ '2021-12-10', '2022-03-25', '2023-01-01', '2023-06-15' ]
+Array ordenado: [ '2023-01-01', '2022-03-25','2023-06-15','2021-12-10' ]
 
 Array original: [ 89, 23, 444, 150, 11 ]
-Array ordenado: [ 11, 23, 89, 150, 444 ]
+Array ordenado: [ 11, 23, 150, 444,89 ]
 
 ```
 
