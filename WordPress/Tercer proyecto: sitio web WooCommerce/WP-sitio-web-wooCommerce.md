@@ -79,11 +79,11 @@ WooCommerce
 ## Personalización plantilla
 1. Instala un WordPress.
 2. Instala y activa la plantilla ASTRA.
-3. Activa el tema y escoge en starter templates "BrandStore".
-4. Personalización de la plantilla
+3. Activa el tema y en plugins -> starter templates escoge "BrandStore".
+4. Piensa la temática de tu tienda online (ropa de deporte, videojuegos, libros, maquillaje...). Y realiza la personalización de la plantilla:
    1. Astra->Personalización
    2. Elige el juego de colores que desees
-   3. Maquetación de cabeceras: activar que sea visible en toda la web, seleccionar el logo que está en banners y otros assets. En design de la cabecera quita el fondo transparente. Con la edición con el lápiz ponle un color de fondo blanco u otro color que complemente tu juego de colores pero eliminando las transparencias. Sigue personalizando tu cabecera: bordes...
+   3. Maquetación de cabeceras: activar que sea visible en toda la web, seleccionar el logo que debéis poner en una carpeta llamada assets. En design de la cabecera quita el fondo transparente. Con la edición con el lápiz ponle un color de fondo blanco u otro color que complemente tu juego de colores pero eliminando las transparencias. Sigue personalizando tu cabecera: bordes...
    4.  Pasar menú principal a la derecha y eliminar menú secundario. A la izquierda añadir módulo de HTML personalizado. Coloca distribuido con flexbox con espacio entre los elementos teléfono de contacto, email de contacto y localización en maps.Añádelo dentro de tres etiquetas link.
    5.  El pie de página: cambia el logo, redúcelo a 2 columnas, ponle un color de fondo que te guste con tu página, cambia la letra a color blanco editando el bloque y poniendo el atributo style, quita la columna quitando el widget y añade un widget de imagen. Añade una imagen 
 </div>
@@ -104,14 +104,27 @@ WooCommerce
 ## Personalización de WooCommerce: Ajustes
 1. En WP-Admin ir a WooCommerce/Ajustes.
 2. Primero rellenar en general los datos.
-3. Comprobar las opciones de resto de pestañas...
-4. Crear una página de Términos y condiciones y en la pestaña Avanzado asociarla.
+   1. Pestaña general: {Dirección: "C/Cerámica 24", Municipio: "Alicante", País: "España", CP: "03008", Ubicación de venta: "Enviar sólo a países específicos", Vender a países específicos: "España", Ubicación del cliente por defecto: "Sin ubicación", Activar impuestos, Activar cupones, Moneda: "Euros", Decimal: "."} --> GUARDAR
+   2. Pestaña productos: Revisar y poner lo único si no está activado activar valoración del defecto. Fíjate que en la parte de arriba tienes General/Inventario. Entra a inventario y decide el tiempo los parámetros. Manda un mensaje de que quedan pocas existencias cuando queden menos de 10. 
+   3. Impuestos: {No introduciré los precios con impuestos incluidos}. En la parte superior ir a Tarifas donde introduciremos el [código del país](https://es.wikipedia.org/wiki/ISO_3166-1]) a poner, la cantidad de 21% y el nombre del impuesto IVA.
+   4. Envío: Vamos a añadir zonas de envío.
+      1. Envío general -> Todas menos Canarias y Alicante. Le damos como método de pago un precio fijo de 3,75€.
+      2. Envío Canarias -> Selecciona Canarias. LE como método de pago un precio fijo de 4,75€.
+      3. Envío Alicante-> Selecciona Alicante. Le ponemos como método de Pago "Recogida en tienda".
+      4. Guarda los cambios.
+    5. Pagos: Activamos pagos que nos interesen: Transferencia bancaria (busca un número de cuenta bancaria y ponlo).
+    6. Echa un vistazo a cuentas y privacidad pero seguramente no hará falta que configures nada.
+    7. Correos electrónicos. Tienes un mensaje personalizado por cada correo que se realiza. Configura el de "Nuevo pedido". Desactiva los que consideres que no son necesarios.
+    8. Integración --> Nada
+    9. Avanzado -> Crear una página de Términos y condiciones en Páginas y en la pestaña Avanzado asociarla. Todo lo demás dejarlo igual
 
 ## Personalización de WooCommerce: Productos
 1. En el menú productos, seleccionar todos y eliminarlos
-2. Dentro de Productos->Categorías elimina las existentes y crea las de nuestro sitio web: Base,Pintalabios y Sombras.
+2. Dentro de Productos->Categorías elimina las existentes y crea las de nuestro sitio web: en el caso de que fuera una tienda de maquillaje podría ser Base,Pintalabios y Sombras.
 3. Vuelve a productos y dale a crear nuevo producto. Con la ayuda de ChatGPT o alguna página web de alguna tienda de maquillaje crea dos productos para cada categoría (ayúdate para copiar descripciones).Para cada producto
    1.  Añade nombre, descripción, descripción corta, imagen, etiquetas y etiquetas. 
    2.  En los datos del producto escoge producto simple. Rellena los precios. Configura inventario, crea un código para el producto y de existencias pon 10.
+   3.  Vas a crear dos variaciones de cada producto. Dirígete a Productos -> Atributos y rellena el formulario, por ejemplo, podría ser Color en el caso del maquillaje.Ahora nos vamos a un producto, cambiamos de producto simple a producto variable cambiándose el menú a otras opciones. En atributos seleccionamos el color y sus variaciones. Seguidamente en variaciones configuramos cada producto diferente. 
 **Puedes duplicar productos y editarlos para ganar tiempo**
+   Como puedes ver resulta una tarea bastante tediosa y automática. Por ello es posible hacer un archivo .csv
 </div>

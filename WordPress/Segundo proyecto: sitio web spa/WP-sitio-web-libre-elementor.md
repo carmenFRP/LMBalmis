@@ -36,7 +36,7 @@ toc:
 <div>
     <div style="display: flex; padding: 10pt; width: 100%; justify-content: flex-end;align-items: center">
             <div >
-                <h2 style="color:#7ba0cd">WP - Personalizando plantillas</h2>
+                <h2 style="color:#7ba0cd">WP - Astra y elementor</h2>
             </div>
             <img height="100" src="../Resources/Fondo.png" alt="Imagen fondo" />
         </div>
@@ -52,9 +52,9 @@ toc:
 
 **Condiciones de entrega**
 
-* Se dispone de 2 sesiones para realizar la práctica. Se entregarán en la fecha indicada. No se admitirán ejercicios entregados  después de esa fecha.
+* Se dispone de 3 sesiones para realizar la práctica. Se entregarán en la fecha indicada. No se admitirán ejercicios entregados  después de esa fecha.
 * La entrega de todas las actividades se hará a través de GitHub y Aules. 
-* En GitHub, al repositorio LM subirás un directorio que deberá nombrarse con el nombre y primer apellido del alumno seguido de la frase “-práctica1-UT5”. El nombre y los apellidos deben ir separados por un guión. En aules el enlace a ese directorio del repositorio.
+* En GitHub, al repositorio LM subirás un directorio que deberá nombrarse con el nombre y primer apellido del alumno seguido de la frase “-práctica2-UT5”. El nombre y los apellidos deben ir separados por un guión. En aules el enlace a ese directorio del repositorio.
 
 **Condiciones de corrección**
 
@@ -80,11 +80,11 @@ Elementor
 1. Instala un WordPress
 2. Instala y activa la plantilla ASTRA
 ![Servicios](../Resources/Astra.png)
-1. Añade el Plugin "Starter template - Elementor, Wordpress & Beaver Builder Templates."
+1. Añade el Plugin "Starter template - Elementor, Wordpress & Beaver Builder Templates.". 
 2. Dirígete al Plugin añadido y a ver biblioteca. Elige después Elementor.
-3. Personaliza alguna opción si así lo deseas y si no continúa con la instalación de la plantilla.Acaba con la instalación de la misma.
+3. Personaliza alguna opción si así lo deseas y si no continúa con la instalación de la plantilla de Spa.Acaba con la instalación de la misma.
 4. Una vez instalada la plantilla, personalízala. Cámbiale colores, opciones... 
-5. Edita las páginas con Elementor: cambia el contenido de texto y añade las imágenes propias. 
+5. Edita las páginas con Elementor: cambia el contenido de texto y añade las imágenes propias (https://huggingface.co)
 6. Muchas veces con las plantillas estamos limitados dentro de nuestras posiblidades. Es por ello que vamos a añadir nuestro propio CSS: 
    1. Dependiendo la plantilla que hayas escogido habrá colores de algún menú o contenido textual que no haya cambiado, cámbialo añadiendo tu propio CSS y en un .txt indica a quién se lo has aplicado, toda tu página debe quedar homogénea.
    2. Añade alguna sombra o algún sutil degradado.
